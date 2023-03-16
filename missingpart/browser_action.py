@@ -8,11 +8,7 @@ from selenium.webdriver.chrome.service import Service
 
 # Create a Service object for the ChromeDriver executable
 chrome_service = Service(ChromeDriverManager().install())
-
-# Create a new Chrome WebDriver instance using the Service object
 driver = webdriver.Chrome(service=chrome_service)
-
-# Navigate to a webpage
 driver.get("https://en.wikipedia.org/wiki/Main_Page")
 
 sleep(2)

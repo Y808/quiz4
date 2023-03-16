@@ -17,19 +17,16 @@ driver.get("http://uitestingplayground.com/textinput")
 # Find the email input field
 email = driver.find_element(By.ID, "newButtonName")
 
-# Type the text
+# Type the text and clear
 email.send_keys("yulia@google.com")
 sleep(2)
-
-# Clear the email input field
 email.clear()
 sleep(2)
 
-#Type and enter
 
 driver2 = webdriver.Chrome(service=chrome_service)
 
-# Navigate to a webpage
+# Navigate to another webpage
 driver2.get("https://en.wikipedia.org/wiki/Main_Page")
 
 sleep(2)
